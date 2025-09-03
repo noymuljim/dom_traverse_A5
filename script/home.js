@@ -55,7 +55,7 @@ const callbtns=document.getElementsByClassName('call')
              newCard.innerHTML=`
                         <div class=" flex justify-between items-center bg-gray-100 p-3 rounded-lg my-3">
                         <div>
-                            <h1>${serviceName}</h1>
+                            <h1 class="font-semibold">${serviceName}</h1>
                              <h1>${serviceNumber}</h1>
                         </div>
                         <h1>${data.date}</h1>
@@ -65,11 +65,61 @@ const callbtns=document.getElementsByClassName('call')
             cardContainer.append(newCard)
              }
             else{
-                alert("not enough coin")
+                alert("‼️ you do not have sufficient coins, you need atleast 20 coins to join a call")
             }
         })
     
     }
+//copy button functionalities
+const copyBtns=document.getElementsByClassName('copy-btn')
+ for( let copybtn of copyBtns){
+        copybtn.addEventListener('click',function(){
+            
+            const copyValue=copybtn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].children[1].children[2].children[0].children[0].innerText
+            
+
+            const currentCopy=Number(copyValue)+ 1;
+
+             getElement('copy-count').innerText=currentCopy
+
+
+
+        })
+    }
+
+//from chat gpt to copy the text in clipboard
+// Copy button functionality
+document.addEventListener('click', async (e) => {
+  const btn = e.target.closest('.copy-btn');
+  if (!btn) return; // only run for copy buttons
+
+  const card = btn.closest('.card');
+  const numberEl = card.querySelector('[data-copy-text]');
+  const number = numberEl?.innerText.trim();
+
+  if (!number) {
+    alert("No number found to copy.");
+    return;
+  }
+
+  try {
+    await navigator.clipboard.writeText(number);
+
+    // Show feedback on button
+    const prev = btn.innerHTML;
+    btn.innerHTML = "✅ Copied!";
+    btn.disabled = true;
+    setTimeout(() => {
+      btn.innerHTML = prev;
+      btn.disabled = false;
+    }, 1200);
+  } catch (err) {
+    alert("Could not copy: " + err.message);
+  }
+});
+
+
+
 
 
 

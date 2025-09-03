@@ -35,7 +35,7 @@
            </div>
 
             <div class="flex justify-between items-center bg-[#00A63E] rounded-3xl px-6 py-2">
-            <h1 id="" class="text-white "><span class="mr-2">0</span>Copy</h1>
+            <h1  class="text-white "><span id="copy-count" class="mr-2">0</span>Copy</h1>
             
            </div>
 
@@ -57,12 +57,15 @@
          <section class="bg-[#F5FFF6]">
             <div class=" w-11/12 mx-auto grid grid-cols-12 gap-8 py-[48px]">
                     <div class="col-span-9 grid ">
-<div id="cards-container" class=" grid grid-cols-3 gap-3">
+            <div id="cards-container" class=" grid grid-cols-3 gap-5">
 
-         <!-- card -->
-                            <div class="bg-white shadow-lg p-5 rounded-lg ">
+        
+                            
+                            
+                             <!-- card 1 -->
+                            <div class="bg-white shadow-lg p-5 rounded-lg card">
                                 <div class="flex justify-between items-center">
-                                    <img class="w-14 border-10 border-[#FFE3E2] bg-[#FFE3E2] rounded-xl" src="./assets/ambulance.png" alt="">
+                                    <img class="w-14 border-10 border-[#FFE3E2] bg-[#FFE3E2] rounded-xl" src="./assets/emergency.png" alt="">
 
                                     <i id="" class="love-btn fa-regular fa-heart text-[20px] text-gray-400"></i>
                                 </div>
@@ -71,22 +74,80 @@
                                     <p class="text-gray-400">National Emergency</p>
                                 </div>
                                 <div class="py-3">
-                                    <h1 class="text-[30px] font-bold">999</h1>
+                                <!-- copy to clipboard(card/data-copy-text) -->
+                                    <h1 class="text-[30px] font-bold" data-copy-text>999</h1>
                                     <div class=" flex items-center justify-center w-19 bg-[#F2F2F2] rounded-xl">
-                                    <h1 class="text-gray-400" >All</h1>
+                                    <h1 class="text-gray-400" >Health</h1>
                                 </div>
                                 </div>
                                 <div class="flex gap-[4%] py-3">
-                                    <button class="btn border-1 w-[48%]"><i class="fa-regular fa-copy   text-gray-400 "></i>Copy</button>
+                                    <button class="copy-btn btn border-1 w-[48%]"><i class="fa-regular fa-copy   text-gray-400 "></i>Copy</button>
                     
-                                    <button id="call-btn" class="call btn bg-[#00A63E] w-[48%] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                                    <button class="call btn bg-[#00A63E] w-[48%] text-white"><i class="fa-solid fa-phone"></i>Call</button>
 
                                 </div>                               
-                            </div>   
-                            
-                            
-                             <!-- card -->
-                            <div class="bg-white shadow-lg p-5 rounded-lg ">
+                            </div> 
+
+
+
+                             <!-- card 2 -->
+                            <div class="bg-white shadow-lg p-5 rounded-lg card">
+                                <div class="flex justify-between items-center">
+                                    <img class="w-14 border-10 border-[#DFEFFF] bg-[#DFEFFF] rounded-xl" src="./assets/police.png" alt="">
+
+                                    <i id="" class="love-btn fa-regular fa-heart text-[20px] text-gray-400"></i>
+                                </div>
+                                <div class="py-3">
+                                    <h1 class="text-[20px] font-bold">Police Helpline Number</h1>
+                                    <p class="text-gray-400">Police</p>
+                                </div>
+                                <div class="py-3">
+                                <!-- copy to clipboard(card/data-copy-text) -->
+                                    <h1 class="text-[30px] font-bold" data-copy-text>999</h1>
+                                    <div class=" flex items-center justify-center w-19 bg-[#F2F2F2] rounded-xl">
+                                    <h1 class="text-gray-400" >Health</h1>
+                                </div>
+                                </div>
+                                <div class="flex gap-[4%] py-3">
+                                    <button class="copy-btn btn border-1 w-[48%]"><i class="fa-regular fa-copy   text-gray-400 "></i>Copy</button>
+                    
+                                    <button class="call btn bg-[#00A63E] w-[48%] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+
+                                </div>                               
+                            </div>
+
+
+
+                             <!-- card 3-->
+                            <div class="bg-white shadow-lg p-5 rounded-lg card">
+                                <div class="flex justify-between items-center">
+                                    <img class="w-14 border-10 border-[#FFE3E2] bg-[#FFE3E2] rounded-xl" src="./assets/fire-service.png" alt="">
+
+                                    <i id="" class="love-btn fa-regular fa-heart text-[20px] text-gray-400"></i>
+                                </div>
+                                <div class="py-3">
+                                    <h1 class="text-[20px] font-bold">Fire Service Number</h1>
+                                    <p class="text-gray-400">Fire Service</p>
+                                </div>
+                                <div class="py-3">
+                                <!-- copy to clipboard(card/data-copy-text) -->
+                                    <h1 class="text-[30px] font-bold" data-copy-text>999</h1>
+                                    <div class=" flex items-center justify-center w-19 bg-[#F2F2F2] rounded-xl">
+                                    <h1 class="text-gray-400" >Fire</h1>
+                                </div>
+                                </div>
+                                <div class="flex gap-[4%] py-3">
+                                    <button class="copy-btn btn border-1 w-[48%]"><i class="fa-regular fa-copy   text-gray-400 "></i>Copy</button>
+                    
+                                    <button class="call btn bg-[#00A63E] w-[48%] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+
+                                </div>                               
+                            </div>
+
+
+
+                             <!-- card 4 -->
+                            <div class="bg-white shadow-lg p-5 rounded-lg card">
                                 <div class="flex justify-between items-center">
                                     <img class="w-14 border-10 border-[#FFE3E2] bg-[#FFE3E2] rounded-xl" src="./assets/ambulance.png" alt="">
 
@@ -97,18 +158,157 @@
                                     <p class="text-gray-400">Ambulance</p>
                                 </div>
                                 <div class="py-3">
-                                    <h1 class="text-[30px] font-bold">1994-999999</h1>
+                                <!-- copy to clipboard(card/data-copy-text) -->
+                                    <h1 class="text-[30px] font-bold" data-copy-text>1994-999999</h1>
                                     <div class=" flex items-center justify-center w-19 bg-[#F2F2F2] rounded-xl">
                                     <h1 class="text-gray-400" >Health</h1>
                                 </div>
                                 </div>
                                 <div class="flex gap-[4%] py-3">
-                                    <button class="btn border-1 w-[48%]"><i class="fa-regular fa-copy   text-gray-400 "></i>Copy</button>
+                                    <button class="copy-btn btn border-1 w-[48%]"><i class="fa-regular fa-copy   text-gray-400 "></i>Copy</button>
                     
-                                    <button id="" class="call btn bg-[#00A63E] w-[48%] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+                                    <button class="call btn bg-[#00A63E] w-[48%] text-white"><i class="fa-solid fa-phone"></i>Call</button>
 
                                 </div>                               
-                            </div> 
+                            </div>
+
+
+
+                             <!-- card 5 -->
+                            <div class="bg-white shadow-lg p-5 rounded-lg card">
+                                <div class="flex justify-between items-center">
+                                    <img class="w-14 border-10 border-[#FFE3E2] bg-[#FFE3E2] rounded-xl" src="./assets/emergency.png" alt="">
+
+                                    <i id="" class="love-btn fa-regular fa-heart text-[20px] text-gray-400"></i>
+                                </div>
+                                <div class="py-3">
+                                    <h1 class="text-[20px] font-bold">Women & Child Helpline</h1>
+                                    <p class="text-gray-400">Women & Child Helpline</p>
+                                </div>
+                                <div class="py-3">
+                                <!-- copy to clipboard(card/data-copy-text) -->
+                                    <h1 class="text-[30px] font-bold" data-copy-text>109</h1>
+                                    <div class=" flex items-center justify-center w-19 bg-[#F2F2F2] rounded-xl">
+                                    <h1 class="text-gray-400">Help</h1>
+                                </div>
+                                </div>
+                                <div class="flex gap-[4%] py-3">
+                                    <button class="copy-btn btn border-1 w-[48%]"><i class="fa-regular fa-copy   text-gray-400 "></i>Copy</button>
+                    
+                                    <button class="call btn bg-[#00A63E] w-[48%] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+
+                                </div>                               
+                            </div>
+
+
+
+                             <!-- card 6-->
+                            <div class="bg-white shadow-lg p-5 rounded-lg card">
+                                <div class="flex justify-between items-center">
+                                    <img class="w-14 border-10 border-[#FFE3E2] bg-[#FFE3E2] rounded-xl" src="./assets/emergency.png" alt="">
+
+                                    <i id="" class="love-btn fa-regular fa-heart text-[20px] text-gray-400"></i>
+                                </div>
+                                <div class="py-3">
+                                    <h1 class="text-[20px] font-bold">Anti-Corruption Helpline</h1>
+                                    <p class="text-gray-400">Anti-Corruption</p>
+                                </div>
+                                <div class="py-3">
+                                <!-- copy to clipboard(card/data-copy-text) -->
+                                    <h1 class="text-[30px] font-bold" data-copy-text>106</h1>
+                                    <div class=" flex items-center justify-center w-19 bg-[#F2F2F2] rounded-xl">
+                                    <h1 class="text-gray-400" >Govt.</h1>
+                                </div>
+                                </div>
+                                <div class="flex gap-[4%] py-3">
+                                    <button class="copy-btn btn border-1 w-[48%]"><i class="fa-regular fa-copy   text-gray-400 "></i>Copy</button>
+                    
+                                    <button class="call btn bg-[#00A63E] w-[48%] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+
+                                </div>                               
+                            </div>
+
+                             <!-- card 7-->
+                            <div class="bg-white shadow-lg p-5 rounded-lg card">
+                                <div class="flex justify-between items-center">
+                                    <img class="w-14 border-10 border-[#FFE3E2] bg-[#FFE3E2] rounded-xl" src="./assets/emergency.png" alt="">
+
+                                    <i id="" class="love-btn fa-regular fa-heart text-[20px] text-gray-400"></i>
+                                </div>
+                                <div class="py-3">
+                                    <h1 class="text-[20px] font-bold">Electricity Helpline</h1>
+                                    <p class="text-gray-400">Electricity Helpline</p>
+                                </div>
+                                <div class="py-3">
+                                <!-- copy to clipboard(card/data-copy-text) -->
+                                    <h1 class="text-[30px] font-bold" data-copy-text>16216</h1>
+                                    <div class=" flex items-center justify-center w-19 bg-[#F2F2F2] rounded-xl">
+                                    <h1 class="text-gray-400" >Electricity</h1>
+                                </div>
+                                </div>
+                                <div class="flex gap-[4%] py-3">
+                                    <button class="copy-btn btn border-1 w-[48%]"><i class="fa-regular fa-copy   text-gray-400 "></i>Copy</button>
+                    
+                                    <button class="call btn bg-[#00A63E] w-[48%] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+
+                                </div>                               
+                            </div>
+
+                             <!-- card 8-->
+                            <div class="bg-white shadow-lg p-5 rounded-lg card">
+                                <div class="flex justify-between items-center">
+                                    <img class="w-14 border-10 border-[#FFE3E2] bg-[#FFE3E2] rounded-xl" src="./assets/emergency.png" alt="">
+
+                                    <i id="" class="love-btn fa-regular fa-heart text-[20px] text-gray-400"></i>
+                                </div>
+                                <div class="py-3">
+                                    <h1 class="text-[20px] font-bold">Brac Helpline</h1>
+                                    <p class="text-gray-400">Brac</p>
+                                </div>
+                                <div class="py-3">
+                                <!-- copy to clipboard(card/data-copy-text) -->
+                                    <h1 class="text-[30px] font-bold" data-copy-text>16445</h1>
+                                    <div class=" flex items-center justify-center w-19 bg-[#F2F2F2] rounded-xl">
+                                    <h1 class="text-gray-400" >NGO</h1>
+                                </div>
+                                </div>
+                                <div class="flex gap-[4%] py-3">
+                                    <button class="copy-btn btn border-1 w-[48%]"><i class="fa-regular fa-copy   text-gray-400 "></i>Copy</button>
+                    
+                                    <button class="call btn bg-[#00A63E] w-[48%] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+
+                                </div>                               
+                            </div>
+
+
+                             <!-- card 9-->
+                            <div class="bg-white shadow-lg p-5 rounded-lg card">
+                                <div class="flex justify-between items-center">
+                                    <img class="w-14 border-10 border-[#FFE3E2] bg-[#FFE3E2] rounded-xl" src="./assets/emergency.png" alt="">
+
+                                    <i id="" class="love-btn fa-regular fa-heart text-[20px] text-gray-400"></i>
+                                </div>
+                                <div class="py-3">
+                                    <h1 class="text-[20px] font-bold">Bangladesh Railway Helpline </h1>
+                                    <p class="text-gray-400">Bangladesh Railway</p>
+                                </div>
+                                <div class="py-3">
+                                <!-- copy to clipboard(card/data-copy-text) -->
+                                    <h1 class="text-[30px] font-bold" data-copy-text>163</h1>
+                                    <div class=" flex items-center justify-center w-19 bg-[#F2F2F2] rounded-xl">
+                                    <h1 class="text-gray-400" >Travel</h1>
+                                </div>
+                                </div>
+                                <div class="flex gap-[4%] py-3">
+                                    <button class="copy-btn btn border-1 w-[48%]"><i class="fa-regular fa-copy   text-gray-400 "></i>Copy</button>
+                    
+                                    <button class="call btn bg-[#00A63E] w-[48%] text-white"><i class="fa-solid fa-phone"></i>Call</button>
+
+                                </div>                               
+                            </div>
+
+
+
 
 </div>
                        
