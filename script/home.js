@@ -25,9 +25,7 @@ const callbtns=document.getElementsByClassName('call')
         callbtn.addEventListener('click',function(){
             const coinValue=callbtn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].children[1].children[1].children[0].innerText;
 
-            if(Number(coinValue)>0){
-
-            }
+           
             const currentCoin=Number(coinValue)-20;
             getElement('coins').innerText=currentCoin
             
