@@ -12,7 +12,7 @@ const lovebtns=document.getElementsByClassName('love-btn')
             const loveValue=lovebtn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].children[1].children[0].children[0].innerText;
 
 
-      const currentLove=Number(loveValue)+ 0;
+      const currentLove=Number(loveValue)+ 1;
 
    getElement('love-count').innerText=currentLove
 
