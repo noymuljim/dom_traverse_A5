@@ -20,12 +20,18 @@ const lovebtns=document.getElementsByClassName('love-btn')
 
         })
     }
+
+    //call button functionalities
+const transactionsData=[];
+
 const callbtns=document.getElementsByClassName('call')
     for( let callbtn of callbtns){
         callbtn.addEventListener('click',function(){
             const coinValue=callbtn.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.children[0].children[0].children[1].children[1].children[0].innerText;
 
-           
+            if(Number(coinValue)>0){
+
+            
             const currentCoin=Number(coinValue)-20;
             getElement('coins').innerText=currentCoin
             
@@ -37,6 +43,11 @@ const callbtns=document.getElementsByClassName('call')
     
             alert("📞 "+ serviceName  +"  "+  serviceNumber)
            
+            //realtime date 
+                const data={
+                 date:new Date().toLocaleTimeString()
+                }
+                transactionsData.push(data)
 
             const cardContainer=document.getElementById('right-container');
             const newCard=document.createElement('div')
@@ -47,12 +58,17 @@ const callbtns=document.getElementsByClassName('call')
                             <h1>${serviceName}</h1>
                              <h1>${serviceNumber}</h1>
                         </div>
-                        <h1>time</h1>
+                        <h1>${data.date}</h1>
                         </div>
             `
-            
+           
             cardContainer.append(newCard)
+             }
+            else{
+                alert("not enough coin")
+            }
         })
+    
     }
 
 
